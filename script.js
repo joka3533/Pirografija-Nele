@@ -110,6 +110,13 @@ const obj44 = piray.push(new Piro("Beli Anđeo", "gallery/pic44.png", "ikone", "
 const obj45 = piray.push(new Piro("Ukrasna Kutija Mini", "gallery/pic45.png", "kutije personal deca", "", ""));
 const obj46 = piray.push(new Piro("Varjača", "gallery/pic46.png", "kuca", "", 150, "/kom"));
 const obj47 = piray.push(new Piro("Podmetač za čaše Ptica", "gallery/pic47.png", "kuca", "9,5x9,5cm", 100, "/kom"));
+const obj48 = piray.push(new Piro("Sveta Petka", "gallery/pic48.png", "ikone", "25x20cm", 4000));
+const obj49 = piray.push(new Piro("Beli Anđeo", "gallery/pic49.png", "ikone", "90x90cm", 11000));
+const obj50 = piray.push(new Piro("Devojčica na prozoru", "gallery/pic50.png", "slike", "40x30cm", 6000));
+const obj51 = piray.push(new Piro("Dragoljub Draža Mihailović", "gallery/pic51.png", "portreti slike", "30x21cm", 3000));
+const obj52 = piray.push(new Piro("Isus Hrist", "gallery/pic52.png", "ikone", "27x18cm", 5000));
+const obj53 = piray.push(new Piro("Manastir Tronoša", "gallery/pic53.png", "ikone slike", "29,7x21cm", 2000));
+const obj54 = piray.push(new Piro("Devojka", "gallery/pic54.png", "slike", "29,7x21cm", 3000));
 
 
 
