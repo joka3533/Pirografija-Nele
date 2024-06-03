@@ -1,0 +1,667 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+margin: 0;
+font-family: "Merriweather Sans", sans-serif;
+}
+h2{
+    text-align: center;
+}
+.to-top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 90%;
+    right: 5px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.to-top i{
+    font-size: 40px;
+    width: 100%;
+    height: auto;
+    color: #c87137;
+    line-height: 50px;
+}
+
+/*****************************************************HEADER**************************************************/
+
+
+header{
+    background-color: #fff;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: strech;
+    padding: 5px 15px;
+    position: relative;
+}
+header>div{
+    flex-basis: 50%;
+    align-self: center;
+}
+.logo img{
+    height: 20vh;
+    width: auto;
+}
+.logo>a>img:link
+.logo>a>img:hover{
+    cursor: pointer;
+}
+.logo>a>img:active{
+    background-color: none;
+
+}
+
+.menu{
+    text-align: right;
+}
+.menu>button{
+    border: none;
+    background-color: #fff;
+}
+.menu>button>i{
+    font-size: 2rem;
+    color: #c87137;
+    margin-right: 25px;
+}
+
+.navbar{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #c87137;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.open{
+    display: block;
+    }
+.close-menu{
+    display: none;
+}
+.navbar a li{
+    border-bottom: 1px solid #fff;
+    list-style-type: none;
+    text-align: center;
+    padding: 40px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    transition: background-color 500ms;
+
+}
+.navbar a:hover{
+    background-color: #fff;
+}
+#close-btn{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: 40px;
+    text-align: center;
+}
+#close-btn span{
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+/*******************************************************MAIN*************************************************/
+
+main{
+    height: fit-content;
+    background-color: #fff;
+}
+.hero{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.hero>img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.hero_text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 4.5vw;
+    padding: 10vw;
+    z-index: 0;
+}
+.hero_text>h1{
+    text-align: center;
+    margin-top: 4vw;
+}
+.hero_text>a>button{
+    margin:0 auto;
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #111010;
+    border: 0px;
+    background-color: #c87137;
+    color: #fff;
+    font-size: 4vw;
+    cursor: pointer;
+}
+.hero_text>h2{
+        display: block;
+        text-transform: capitalize;
+        font-weight: light;
+        font-size: 5vw;
+    }
+
+
+
+.services{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    padding-bottom: 0;
+}
+.services>div{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 2vh;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+.services div a i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #c87137;
+    color: #000;
+    text-align: center;
+    line-height: 100px;
+    font-size: 2.5rem;
+}
+
+.art{
+    background-image: url('Image/woodback.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.art div{
+    width: 100%;
+    max-height: auto;
+}
+.art div>img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.art div>p{
+     margin: 3vw 6vw;
+     padding-bottom: 4vh;
+}
+
+.about{
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.about img{
+    width: 150px;
+    height: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.about p{
+    margin: 3vw 6vw;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 25px;
+}
+.social a{
+    border-radius: 7px;
+    transition: background-color 500ms;
+}
+.social a:hover{
+    background-color: #c87137;
+}
+.social a i{
+    font-size: 3rem;
+    color: #c87137;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 500ms;
+}
+.social a i:hover{
+    color: #fff;
+}
+
+
+/***************************************************FOOTER*************************************************/
+
+footer{
+    height: auto;
+    padding: 20px;
+    background-color: #c87137;
+}
+.contact{
+    text-align: center;
+}
+.contact h3{
+    color: #fff;
+}
+.contact p{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.contact a{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.icons i{
+    font-size: 1.4rem;
+    color: #000;
+    margin: 7px;
+}
+
+/****************************************************GALERIJA***********************************************************/
+.whatsapp-btn{
+    position: fixed;
+    top: 80%;
+    right: 4px;
+    width: 50px;
+    height: 50px;    
+    background-color: rgb(23, 168, 23);
+    border: 1px solid #fff;
+    border-radius: 13px;
+}
+.viber-btn{
+    position: fixed;
+    top: 71%;
+    right: 0;
+    width: 50px;
+    height: 50px;    
+    background-color: rgb(168, 23, 144);
+    border: 1px solid #fff;
+    border-radius: 13px;
+}
+.whatsapp-btn a, .viber-btn a{
+    width: 50px;
+    height: 50px;
+    text-align: center;    
+    font-size: 40px;
+}
+.whatsapp-btn a i, .viber-btn a i{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 50px;
+
+}
+.gallery-div{
+    margin: 0 auto;
+}
+.filter-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 5px;
+}
+.filter-div button{
+    flex-basis: 47%;
+    margin: 5px 5px;
+    padding: 7px;
+    border-radius: 7px;
+    border: 1px solid #c87137;
+    background-color: #fff;
+    color: #c87137;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 700ms;
+}
+.filter-div button:hover{
+    background-color: #c87137;
+    color: #fff;
+}
+.filter-div button.active{
+    background-color: #c87137;
+    color: #fff;
+}
+.photo-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Image/backg2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px 5px;
+    margin: 0 auto;
+}
+.card-box{
+    flex-basis: 300px;
+    margin: 20px 10vw;
+    border: 5px solid #e7c28b;
+    background-color: #e7c28b;
+}
+.hide{
+    display: none;
+}
+.card-box .img-holder{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.card-box img{
+    max-width: 100%;
+}
+.card-box .name-holder{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 5vw;
+    margin-bottom: 10px;
+}
+.card-box .price-holder{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 5vw;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.card-box .size-holder{
+    font-size: 0.9rem;
+    padding-left: 5vw;
+    text-align: left;
+}
+
+/*********************************************************USLUGE********************************************************/
+.usluge{
+    box-sizing: border-box;
+    width: 93%;
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.ubox{
+    height: fit-content;
+    width: inherit;
+    margin: 10px 0 0 0;
+    border: 1px solid rgb(228, 192, 93);
+    box-shadow: 1px 1px 5px 3px #c5c3c3;
+    /*background-color: #e7c28b;*/
+    background: linear-gradient(45deg, rgb(247, 222, 155), rgb(228, 158, 93));
+    padding: 1rem 2rem ;
+}
+.usluge div:last-child{
+    margin-bottom: 10px;
+}
+.ubox h3{
+    text-align: center;
+}
+.desc{
+    line-height: 1.5rem;
+    color: #111;
+}
+.more-text{
+    display: none;
+}
+.galink{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.uslink{
+    color: black;
+}
+.uslink:hover{
+    font-size: 1.1rem;
+}
+.btn-see-more,
+.btn-hide{
+    font-size: 1rem;
+    color: rgb(72, 50, 112);
+    cursor: pointer;
+}
+.btn-hide{
+    display: none;
+}
+
+/******************************************************MEDIA QUERY******************************************************/
+@media only screen and (min-width: 600px){
+    .navbar{
+        top: 0;
+        left: 40%;
+        right: 0;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .menu{
+        margin-right: 30px;
+    }
+    .menu>button>i{
+        font-size: 3rem;
+    }
+    .hero img{
+        max-width: auto;
+        max-height: 80%;
+    }
+    .services{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    .services div{
+        float: left;
+        width: 45%;
+        height: 200px;
+    }
+    .social{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 35px 35px;
+    }
+    .social a{
+        margin: 10px;
+    } 
+
+    .photo-div{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card-box{
+        margin: 2vw;
+    }
+    .card-box .name-holder{
+        padding: 5px 3vw;
+    }
+    .card-box .price-holder{
+        padding-right: 3vw;
+    }
+    .card-box .size-holder{
+        padding-left: 3vw;
+    }
+}
+
+@media only screen and (min-width: 762px){
+    .menu{
+        margin-right: 0;
+        flex-basis: 75%;
+    }
+    .menu>button{
+        display: none;
+    }
+    .logo{
+        margin-left: 0;
+        flex-basis: 25%;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-self: center;
+        align-items: center;
+        position: inherit;
+        background-color: #fff;
+    }
+    .navbar a li{
+        width: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: border-width 600ms;
+    }
+    .navbar a li:hover{
+        border-width: 1px;
+        border-style: solid;
+        border-color: #c87137;
+    }
+    .navbar a{
+        font-size: 1rem;
+        color: #c87137;
+    }
+    #close-btn{
+        display: none;
+    }
+    .services div{
+    width: 30%;
+    }
+    .filter-div button{
+        flex-basis: 30%;
+    }
+    .card-box .name-holder{
+        padding: 5px 2vw;
+    }
+    .card-box .price-holder{
+        padding-right: 2vw;
+    }
+    .card-box .size-holder{
+        padding-left: 2vw;
+    }
+    .hero{
+        max-height: 120vh;
+    }
+    .hero img{
+        width: 100%;
+        height: 120vh;
+    }
+    .hero_text{
+        font-size: 4vw;
+    }
+}
+@media only screen and (min-width: 992px){
+    header{
+        padding: 20px;
+        margin: 0 30px 0 30px;
+    }
+    .hero{
+        width: 100%;
+        height: 100vh;
+    }
+    .hero img{
+        width: 100%;
+        max-height: 100vh;
+    }
+    .hero_text{
+        font-size: 3vw;
+    }
+    .hero_text>a>button{
+        font-size: 3.5vw;
+    }
+    .hero_text h1{
+        margin-top: 0;
+    }
+    .services{
+        padding-bottom: 80px;
+    }
+    .services div{
+        width: 21%;
+        margin: 30px;
+        }
+
+    .art{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;    
+    } 
+    .art div>img{
+        height: 100%;
+    }
+    .art div>p, .art div>h2{
+        margin: 4vw;
+   }
+   .card-box{
+        flex-basis: 25%;
+   }
+   .filter-div button{
+        flex-basis: 23%;
+    }
+    .card-box .name-holder{
+        padding: 5px 1vw;
+    }
+    .card-box .price-holder{
+        padding-right: 1vw;
+    }
+    .card-box .size-holder{
+        padding-left: 1vw;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .services div{
+        width: 18%;
+        }
+    .card-box{
+        flex-basis: 20%;
+    }
+    .hero_text{
+        font-size: 2.8vw;
+    }
+    .hero_text h2{
+        font-size: 3.7vw;
+    }
+    .hero_text>a>button{
+        font-size: 2.8vw;
+    }
+}
