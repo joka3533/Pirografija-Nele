@@ -451,6 +451,12 @@ footer{
     font-weight: bold;
     text-decoration: none;
 }
+.uslink{
+    color: black;
+}
+.uslink:hover{
+    font-size: 1.1rem;
+}
 .btn-see-more,
 .btn-hide{
     font-size: 1rem;
