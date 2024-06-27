@@ -44,10 +44,6 @@ header>div{
     flex-basis: 50%;
     align-self: center;
 }
-.logo img{
-    height: 20vh;
-    width: auto;
-}
 .logo>a>img:link
 .logo>a>img:hover{
     cursor: pointer;
@@ -211,8 +207,6 @@ main{
     max-height: auto;
 }
 .art div>img{
-    width: 100%;
-    height: auto;
     display: block;
 }
 .art div>p{
@@ -225,8 +219,6 @@ main{
     padding: 0 0 20px 0;
 }
 .about img{
-    width: 150px;
-    height: auto;
     text-align: center;
     margin-top: 40px;
 }
