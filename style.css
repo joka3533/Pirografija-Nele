@@ -44,6 +44,10 @@ header>div{
     flex-basis: 50%;
     align-self: center;
 }
+.logo img{
+    height: 20vh;
+    width: auto;
+}
 .logo>a>img:link
 .logo>a>img:hover{
     cursor: pointer;
@@ -208,6 +212,8 @@ main{
 }
 .art div>img{
     display: block;
+    width: 100%;
+    height: auto;
 }
 .art div>p{
      margin: 3vw 6vw;
