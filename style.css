@@ -17,6 +17,7 @@ h2{
     text-align: center;
     background-color: #fff;
     border-radius: 50px;
+    border: 3px solid #c87137;
 }
 .to-top i{
     font-size: 40px;
@@ -271,11 +272,12 @@ footer{
     text-align: center;
 }
 .contact h3{
-    color: #fff;
+    color: #000;
 }
 .contact p{
     font-weight: bold;
     font-size: 1.2rem;
+    color: #fff;
 }
 .contact a{
     font-weight: bold;
